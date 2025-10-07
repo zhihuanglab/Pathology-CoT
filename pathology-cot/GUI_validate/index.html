@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIL Reviewer</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self'; img-src 'self' data: blob: file: *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <div class="app__title">Human-in-the-loop Reviewer</div>
+      <div class="app__controls">
+        <button id="btnStart" class="btn">Start</button>
+        <button id="btnDownloadJSON" class="btn">Download Logs (JSON)</button>
+        <button id="btnDownloadCSV" class="btn">Download Logs (CSV)</button>
+      </div>
+    </header>
+
+    <section class="status">
+      <div>
+        <span id="statusCase">Case: -</span>
+        <span id="statusRoi" class="ml">ROI: -</span>
+        <span id="statusIndex" class="ml">Progress: 0/0</span>
+      </div>
+      <div>
+        <span id="statusTimer">Elapsed: 00:00</span>
+        <span id="statusDecision" class="ml">Decision: -</span>
+      </div>
+      <div class="notice">Reject means reject the whole zoom (this ROI). Next = accept.</div>
+    </section>
+
+    <main class="main two-col">
+      <div class="images images--stacked">
+        <div class="imgcol">
+          <div class="imglabel">Thumbnail + Box</div>
+          <img id="imgThumb" alt="thumbnail with box" />
+        </div>
+        <div class="imgcol">
+          <div class="imglabel">ROI Zoom</div>
+          <img id="imgBox" alt="box" />
+        </div>
+        <div class="imgcol">
+          <div class="imglabel">Cyto Zoom</div>
+          <img id="imgCyto" alt="cyto box" />
+        </div>
+      </div>
+      <div class="panel panel--right">
+        <div class="aidraft">
+          <div class="panel__label">Thumbnail Impression</div>
+          <textarea id="editThumb" placeholder="Write or edit thumbnail impression..."></textarea>
+          <div class="actions" style="margin-top:8px;">
+            <button id="btnThumbAccept" class="btn btn--primary">Accept Thumbnail</button>
+          </div>
+        </div>
+        <div class="aidraft">
+          <div class="panel__label">Why Zoom</div>
+          <textarea id="editWhy" placeholder="Write or edit why to zoom..."></textarea>
+          <div class="actions" style="margin-top:8px;">
+            <button id="btnWhyAccept" class="btn btn--primary">Accept</button>
+            <button id="btnWhyReject" class="btn btn--danger">Reject</button>
+          </div>
+        </div>
+        <div class="aidraft">
+          <div class="panel__label">Findings (ROI + Cyto)</div>
+          <textarea id="editBox" placeholder="Write or edit ROI findings..."></textarea>
+          <textarea id="editCyto" placeholder="Write or edit cyto findings..." style="margin-top:8px;"></textarea>
+        </div>
+        <div class="actions">
+          <button id="btnRejectAll" class="btn btn--danger">Reject this zoom</button>
+          <button id="btnNext" class="btn btn--primary">Next</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div id="footerMsg">Ready.</div>
+    </footer>
+  </div>
+
+  <!-- Load manifest.js as a fallback to ensure data is available even if fetch is cached/blocked -->
+  <script src="./manifest.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script>
+    window.addEventListener('error', (e) => {
+      const el = document.getElementById('footerMsg');
+      if (el) el.textContent = 'Error: ' + e.message;
+    });
+  </script>
+</body>
+</html>
+
+
