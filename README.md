@@ -311,9 +311,10 @@ For manual annotation from scratch, use `index_manual.html` instead of `index.ht
 
 Before running the diagnostic agent, you need:
 
-1. **YOLO Behavior Predictor** (included): `pathology-o3/behavior_predictor.pt`
+1. **YOLO Behavior Predictor**: Download `behavior_predictor.pt` ([HuggingFace](https://huggingface.co/XXXX/Pathology-CoT-weights) | [Google Drive](https://drive.google.com/XXXX))
    - Trained on expert viewing behavior from the Pathology-CoT dataset
    - Predicts where pathologists would look on a WSI
+   - Place the downloaded file in `pathology-o3/behavior_predictor.pt`
 
 2. **Extract ROIs**: Use YOLO to generate regions of interest from your WSI
    - The behavior predictor identifies diagnostically important areas
@@ -364,11 +365,13 @@ Before running the diagnostic agent, you need:
 --annotation-file    Ground truth labels for evaluation
 ```
 
-### Files Included
+### Model Weights
 
 - **`behavior_predictor.pt`**: Pre-trained YOLOv8 weights for ROI prediction
+  - **Download**: [HuggingFace](https://huggingface.co/XXXX/Pathology-CoT-weights) | [Google Drive](https://drive.google.com/XXXX)
   - Trained on expert viewing patterns from Pathology-CoT dataset
   - Use this to identify where to extract ROIs from WSIs
+  - Size: ~130 MB
   
 - **`think_ln_classify.py`**: VLM-based reasoning script
   - Analyzes pre-extracted ROIs
