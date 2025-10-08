@@ -311,7 +311,7 @@ For manual annotation from scratch, use `index_manual.html` instead of `index.ht
 
 Before running the diagnostic agent, you need:
 
-1. **YOLO Behavior Predictor**: Download `behavior_predictor.pt` ([HuggingFace](https://huggingface.co/XXXX/Pathology-CoT-weights) | [Google Drive](https://drive.google.com/XXXX))
+1. **YOLO Behavior Predictor**: Download `behavior_predictor.pt` ([Google Drive](https://drive.google.com/file/d/1Nt43q0R9j42w6qZFXp0J0fA_NwUlgqmb/view?usp=share_link))
    - Trained on expert viewing behavior from the Pathology-CoT dataset
    - Predicts where pathologists would look on a WSI
    - Place the downloaded file in `pathology-o3/behavior_predictor.pt`
@@ -368,10 +368,22 @@ Before running the diagnostic agent, you need:
 ### Model Weights
 
 - **`behavior_predictor.pt`**: Pre-trained YOLOv8 weights for ROI prediction
-  - **Download**: [HuggingFace](https://huggingface.co/XXXX/Pathology-CoT-weights) | [Google Drive](https://drive.google.com/XXXX)
+  - **Download**: [Google Drive](https://drive.google.com/file/d/1Nt43q0R9j42w6qZFXp0J0fA_NwUlgqmb/view?usp=share_link) (~130 MB)
   - Trained on expert viewing patterns from Pathology-CoT dataset
   - Use this to identify where to extract ROIs from WSIs
-  - Size: ~130 MB
+  
+**Download Instructions:**
+```bash
+# Option 1: Manual download
+# Click the link above and download through browser
+
+# Option 2: Command line (using gdown)
+pip install gdown
+gdown https://drive.google.com/uc?id=1Nt43q0R9j42w6qZFXp0J0fA_NwUlgqmb -O pathology-o3/behavior_predictor.pt
+
+# Option 3: Using wget
+wget --load-cookies /tmp/cookies.txt "https://drive.google.com/uc?export=download&id=1Nt43q0R9j42w6qZFXp0J0fA_NwUlgqmb" -O pathology-o3/behavior_predictor.pt && rm -rf /tmp/cookies.txt
+```
   
 - **`think_ln_classify.py`**: VLM-based reasoning script
   - Analyzes pre-extracted ROIs
@@ -457,8 +469,9 @@ If you find this work useful, please cite:
 
 - 📄 **Paper**: [arXiv:2510.04587](https://arxiv.org/abs/2510.04587)
 - 🤗 **Dataset**: [HuggingFace](https://huggingface.co/datasets/XXXX) (Coming Soon)
+- ⚖️ **Model Weights**: [Google Drive](https://drive.google.com/file/d/1Nt43q0R9j42w6qZFXp0J0fA_NwUlgqmb/view?usp=share_link) (behavior_predictor.pt, 130 MB)
 - 🌐 **Demo**: Coming Soon!
-- 💬 **Issues**: [GitHub Issues](https://github.com/XXXX/Pathology-CoT/issues)
+- 💬 **Issues**: [GitHub Issues](https://github.com/zhihuanglab/Pathology-CoT/issues)
 
 ---
 
