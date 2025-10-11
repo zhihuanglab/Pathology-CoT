@@ -1,0 +1,3246 @@
+{
+  "experiment_info": {
+    "model_name": "gemini-2.5-pro",
+    "api_server": "gemini",
+    "timestamp": "2025-07-26T06:19:31.299837",
+    "total_images_tested": 321,
+    "successful_classifications": 321,
+    "failed_classifications": 0
+  },
+  "prompt_used": "You are an expert pathologist analyzing histopathological images of lymph nodes. \n        \nYour task is to classify whether this lymph node image shows POSITIVE or NEGATIVE signs of malignancy (cancer metastasis).\n\nPlease analyze the image carefully and look for:\n- Cellular morphology and architecture\n- Nuclear features (size, shape, chromatin pattern)\n- Tissue organization and structure\n- Presence of abnormal cells or infiltration patterns\n- Overall histological features indicative of malignancy\n\nBased on your analysis, classify this lymph node as either:\n- POSITIVE: Shows evidence of malignant cells/metastasis\n- NEGATIVE: Shows normal lymph node tissue without malignancy\n\nRespond with ONLY one word: either \"POSITIVE\" or \"NEGATIVE\" (without quotes).",
+  "performance_metrics": {
+    "accuracy": 0.6199376947040498,
+    "precision": 0.23529411764705882,
+    "recall": 0.8780487804878049,
+    "f1_score": 0.3711340206185567,
+    "confusion_matrix": [
+      [
+        163,
+        117
+      ],
+      [
+        5,
+        36
+      ]
+    ]
+  },
+  "summary_statistics": {
+    "total_positive_gt": 41,
+    "total_negative_gt": 280,
+    "total_positive_pred": 153,
+    "total_negative_pred": 168,
+    "correct_predictions": 199
+  },
+  "detailed_results": [
+    {
+      "image_filename": "AI-LNCO2-0004_G_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:08:30.515092"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_H_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:08:41.323770"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_J_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": false,
+      "timestamp": "2025-07-26T05:08:52.345571"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:09:06.249635"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:09:20.153143"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:09:36.838544"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:09:50.702109"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:10:08.729664"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:10:24.817509"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:10:35.944032"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:10:48.058343"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:11:02.295871"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:11:15.860799"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:11:27.650946"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:11:35.019538"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_X_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:11:49.250220"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_Y_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:12:01.127332"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_Z_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:12:12.951088"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_ZA_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:12:25.033677"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_ZB_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:12:41.056256"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_ZC_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:12:55.921869"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_ZD_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:13:07.498868"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_ZE_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:13:23.354631"
+    },
+    {
+      "image_filename": "AI-LNCO2-0004_ZF_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:13:40.371360"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_J_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:13:51.360479"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:14:06.286041"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_L_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:14:16.204597"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:14:28.517427"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:14:42.832301"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:14:53.642702"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:15:05.710669"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:15:17.660835"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:15:31.277380"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:15:44.446349"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:15:57.302421"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:16:08.391261"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:16:22.279431"
+    },
+    {
+      "image_filename": "AI-LNCO2-0005_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:16:36.214684"
+    },
+    {
+      "image_filename": "AI-LNCO2-0009_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:16:51.175744"
+    },
+    {
+      "image_filename": "AI-LNCO2-0009_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:17:04.793023"
+    },
+    {
+      "image_filename": "AI-LNCO2-0009_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:17:18.821064"
+    },
+    {
+      "image_filename": "AI-LNCO2-0009_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:17:31.481008"
+    },
+    {
+      "image_filename": "AI-LNCO2-0009_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:17:45.962252"
+    },
+    {
+      "image_filename": "AI-LNCO2-0009_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:17:59.593637"
+    },
+    {
+      "image_filename": "AI-LNCO2-0009_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:18:12.945056"
+    },
+    {
+      "image_filename": "AI-LNCO2-0009_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:18:26.966960"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_G_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:18:42.340392"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_H_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:18:53.028310"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_J_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:19:07.044688"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:19:24.623882"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:19:37.887927"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:19:48.089338"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:19:59.369961"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:20:11.833351"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:20:26.012846"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:20:39.925491"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:20:54.789713"
+    },
+    {
+      "image_filename": "AI-LNCO2-0012_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:21:09.018001"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_H_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:21:23.609790"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_J_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:21:36.428296"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:21:50.214266"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:22:04.104972"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:22:16.731203"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:22:29.201622"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:22:43.443616"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:22:53.448297"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:23:05.552249"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:23:17.871767"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:23:30.954464"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:23:45.338067"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:23:55.137741"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:24:05.243796"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:24:18.204329"
+    },
+    {
+      "image_filename": "AI-LNCO2-0013_X_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:24:32.027676"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:24:46.733640"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:24:57.740226"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:25:09.443663"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:25:23.259930"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:25:38.538903"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:25:50.618870"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:26:05.574624"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:26:20.167779"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:26:31.787668"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:26:43.666706"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:26:55.751456"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:27:08.065480"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:27:23.793246"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2X_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:27:37.427870"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2Y_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:27:52.480236"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2Z_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:28:07.737696"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2ZA_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:28:21.052266"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2ZB_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:28:33.316132"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2ZC_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:28:44.229979"
+    },
+    {
+      "image_filename": "AI-LNCO2-0017_2ZD_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:28:55.116989"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:29:09.999433"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:29:25.125742"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:29:37.546688"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:29:49.216479"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:30:01.608909"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:30:12.753085"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:30:24.442766"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:30:34.580646"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:30:50.764027"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:31:04.276752"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:31:15.483745"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:31:28.439895"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_X_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:31:43.063246"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_Y_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:31:56.265829"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_Z_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:32:08.351107"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZA_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:32:21.798235"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZB_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:32:35.279791"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZC_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:32:47.837659"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZD_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:32:59.915244"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZE_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:33:10.331966"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZF_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:33:20.222454"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZG_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:33:33.070228"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZH_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:33:45.768808"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZJ_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:33:59.248443"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZK_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:34:19.761776"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZL_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:34:31.981791"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZM_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:34:45.369420"
+    },
+    {
+      "image_filename": "AI-LNCO2-0023_ZN_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:34:56.202804"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_C_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:35:12.042520"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_J_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:35:24.126739"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:35:37.097730"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:35:51.514174"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:36:04.928098"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_N_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:36:34.931715"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_O_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:36:48.222852"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:37:01.263884"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:37:14.771445"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:37:25.826537"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_S_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:37:35.454440"
+    },
+    {
+      "image_filename": "AI-LNCO2-0026_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:37:49.483333"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_F_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:38:03.715282"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_H_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": false,
+      "timestamp": "2025-07-26T05:38:18.562450"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_J_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:38:32.823798"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:38:45.803557"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_L_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:38:58.248829"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:39:11.174256"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_N_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:39:27.278314"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:39:41.919903"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:39:59.204412"
+    },
+    {
+      "image_filename": "AI-LNCO2-0027_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:40:10.371097"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_H_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:40:22.430105"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_J_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:40:34.859939"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:40:47.056797"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:40:59.782008"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:41:15.822178"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:41:30.147684"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:41:40.502097"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:41:51.561900"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:42:00.269973"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:42:13.825732"
+    },
+    {
+      "image_filename": "AI-LNCO2-0030_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:42:29.421909"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:42:39.894721"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_L_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:42:54.448775"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:43:06.827590"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:43:15.939128"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_O_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:43:32.018001"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:43:44.580506"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_R_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:43:58.113175"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_S_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:44:11.643996"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_T_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:44:25.269806"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_U_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:44:37.453109"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_V_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:44:51.274928"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_W_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:45:03.072746"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_X_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:45:16.776299"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_Y_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:45:30.268430"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_Z_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:45:45.034351"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZA_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:45:57.428684"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZB_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:46:10.992225"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZC_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:46:24.256306"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZE_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:46:36.811583"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZF_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:46:48.625157"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZG_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:47:02.159986"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZH_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:47:15.908899"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZJ_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:47:27.750058"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZK_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:47:41.973123"
+    },
+    {
+      "image_filename": "AI-LNCO2-0032_ZL_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:47:54.781279"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_J_NBB",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:48:08.328791"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_K_NBB",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:48:21.133239"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_L_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:48:35.433673"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_M_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:48:51.689607"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_N_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:49:03.610615"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_O_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:49:21.113873"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_P_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:49:37.536948"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_Q_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:49:48.852718"
+    },
+    {
+      "image_filename": "AI-LNCO2-0033_R_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:50:02.678153"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_E_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:50:14.160487"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_M_NBB",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:50:28.295707"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_N_NBB",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:50:41.254774"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_O_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:50:57.257304"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_P_NBB",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": false,
+      "timestamp": "2025-07-26T05:51:10.566599"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_Q_NBB",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:51:23.107601"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_R_NBB",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:51:35.453617"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_S_NBB",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:51:49.423020"
+    },
+    {
+      "image_filename": "AI-LNCO2-0035_T_NBB",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:52:00.329777"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_F_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:52:13.701802"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_J_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:52:26.654259"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:52:37.199453"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:52:49.075707"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_M_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:53:02.699408"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_N_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:53:14.634796"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:53:26.456155"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:53:39.620642"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:53:54.122355"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_S_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:54:07.943690"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_T_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": false,
+      "timestamp": "2025-07-26T05:54:22.375698"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_U_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:54:37.407319"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_V_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:54:51.140791"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_W_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:55:05.335445"
+    },
+    {
+      "image_filename": "AI-LNCO2-0036_Y_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:55:16.373559"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_J_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:55:28.006488"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:55:37.220303"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:55:49.304137"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:56:02.721212"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:56:16.345660"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:56:26.100450"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:56:41.141273"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_S_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T05:56:58.118786"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_T_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": false,
+      "timestamp": "2025-07-26T05:57:12.772292"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:57:23.059607"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:57:36.218054"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:57:53.275236"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_X_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:58:05.807225"
+    },
+    {
+      "image_filename": "AI-LNCO2-0037_Y_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:58:15.948289"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_H_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:58:29.357901"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:58:42.566254"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:58:53.731579"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:59:05.711841"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:59:16.932400"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T05:59:30.118407"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:59:42.270801"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T05:59:57.834293"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:00:11.513771"
+    },
+    {
+      "image_filename": "AI-LNCO2-0039_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:00:24.250000"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_C_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T06:00:37.277894"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_E_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:01:13.782704"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:01:24.872781"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:01:37.574450"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:01:52.585124"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:02:09.217871"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:02:21.708463"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:02:34.505020"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:02:46.692179"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:03:02.108742"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:03:12.397550"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:03:27.144444"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:03:37.280843"
+    },
+    {
+      "image_filename": "AI-LNCO2-0040_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:03:51.699653"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:04:07.815494"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:04:21.417561"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:04:33.700263"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:04:48.393097"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:05:00.824445"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:05:13.505575"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:05:27.775733"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:05:40.982572"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:05:54.188576"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:06:04.940760"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:06:18.392994"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:06:33.104109"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:06:52.050354"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_X_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:07:05.017024"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_Z_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:07:14.644244"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_ZA_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:07:28.859496"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_ZB_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:07:42.428298"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_ZC_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:07:51.953602"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_ZD_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:08:05.672172"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_ZE_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:08:22.783701"
+    },
+    {
+      "image_filename": "AI-LNCO2-0041_ZF_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:08:39.260407"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:08:53.494439"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:09:06.237474"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:09:20.032409"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:09:32.407122"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:09:45.300743"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:09:56.283620"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:10:07.534881"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:10:23.183984"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:10:36.820614"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:10:50.849828"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:11:03.408359"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_X_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:11:16.448887"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_Y_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:11:30.687585"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_Z_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:11:42.869314"
+    },
+    {
+      "image_filename": "AI-LNCO2-0042_ZA_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:11:56.781907"
+    },
+    {
+      "image_filename": "AI-LNCO2-0044_N_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T06:12:10.002967"
+    },
+    {
+      "image_filename": "AI-LNCO2-0044_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:12:21.576786"
+    },
+    {
+      "image_filename": "AI-LNCO2-0044_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:12:32.845127"
+    },
+    {
+      "image_filename": "AI-LNCO2-0044_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:12:43.253786"
+    },
+    {
+      "image_filename": "AI-LNCO2-0044_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:12:55.967626"
+    },
+    {
+      "image_filename": "AI-LNCO2-0044_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:13:12.367495"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_J_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:13:28.850850"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:13:40.835621"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:13:53.223989"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:14:06.123772"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_N_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:14:17.619045"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:14:30.344754"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:14:44.943046"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:14:59.236998"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:15:11.238818"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:15:21.890827"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:15:34.453527"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_U_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:15:45.557856"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:15:58.330812"
+    },
+    {
+      "image_filename": "AI-LNCO2-0045_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:16:09.111027"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_H_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:16:21.297452"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_K_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:16:36.036105"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_L_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:16:52.119918"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_M_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:17:07.680576"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_N_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T06:17:28.062448"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_O_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:17:41.904659"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_P_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:17:56.482188"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_Q_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:18:11.815734"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_R_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:18:25.001210"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_S_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:18:37.360844"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_T_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:18:50.683710"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_U_HE",
+      "ground_truth": 1,
+      "ground_truth_label": "POSITIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": true,
+      "timestamp": "2025-07-26T06:19:02.218795"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_V_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "NEGATIVE",
+      "model_processed_output": "NEGATIVE",
+      "binary_prediction": 0,
+      "correct": true,
+      "timestamp": "2025-07-26T06:19:15.817333"
+    },
+    {
+      "image_filename": "AI-LNCO2-0049_W_HE",
+      "ground_truth": 0,
+      "ground_truth_label": "NEGATIVE",
+      "model_raw_output": "POSITIVE",
+      "model_processed_output": "POSITIVE",
+      "binary_prediction": 1,
+      "correct": false,
+      "timestamp": "2025-07-26T06:19:30.263709"
+    }
+  ]
+}
