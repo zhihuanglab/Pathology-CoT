@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIL Reviewer — Manual Entry</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <div class="app__title">Human-in-the-loop Reviewer — Manual Entry</div>
+      <div class="app__controls">
+        <button id="btnDownloadJSON" class="btn">Download Logs (JSON)</button>
+        <button id="btnDownloadCSV" class="btn">Download Logs (CSV)</button>
+      </div>
+    </header>
+
+    <section class="status">
+      <div>
+        <span>Manual mode: paste paths and type impressions below.</span>
+      </div>
+    </section>
+
+    <main class="main two-col">
+      <div class="images images--stacked">
+        <div class="aidraft">
+          <div class="panel__label">Thumbnail path</div>
+          <input id="thumbPath" placeholder="e.g., data/.../thumbnail_with_box_1.jpeg" style="width:100%" />
+        </div>
+        <div class="aidraft">
+          <div class="panel__label">ROI path</div>
+          <input id="boxPath" placeholder="e.g., data/.../box_1.jpeg" style="width:100%" />
+        </div>
+        <div class="aidraft">
+          <div class="panel__label">Cyto path</div>
+          <input id="cytoPath" placeholder="e.g., data/.../cyto_box_1.jpeg" style="width:100%" />
+        </div>
+        <div class="imgcol">
+          <div class="imglabel">Preview</div>
+          <img id="imgThumb" alt="thumbnail with box" />
+          <img id="imgBox" alt="box" style="margin-top:8px;" />
+          <img id="imgCyto" alt="cyto box" style="margin-top:8px;" />
+          <button id="btnLoad" class="btn" style="margin-top:8px;">Load Images</button>
+        </div>
+      </div>
+      <div class="panel panel--right">
+        <div class="aidraft">
+          <div class="panel__label">Thumbnail Impression (if typed before, no need to retype)</div>
+          <textarea id="editThumb" placeholder="Write or paste thumbnail impression..."></textarea>
+          <div class="actions" style="margin-top:8px;">
+            <button id="btnThumbAccept" class="btn btn--primary">Accept Thumbnail</button>
+          </div>
+        </div>
+        <div class="aidraft">
+          <div class="panel__label">Why Zoom</div>
+          <textarea id="editWhy" placeholder="Write why to zoom..."></textarea>
+          <div class="actions" style="margin-top:8px;">
+            <button id="btnWhyAccept" class="btn btn--primary">Accept</button>
+            <button id="btnWhyReject" class="btn btn--danger">Reject</button>
+          </div>
+        </div>
+        <div class="aidraft">
+          <div class="panel__label">Findings (ROI + Cyto)</div>
+          <textarea id="editBox" placeholder="Write ROI findings..."></textarea>
+          <div class="actions" style="margin-top:8px;">
+            <button id="btnBoxAccept" class="btn btn--primary">Accept</button>
+            <button id="btnBoxReject" class="btn btn--danger">Reject</button>
+          </div>
+          <textarea id="editCyto" placeholder="Write cyto findings..." style="margin-top:8px;"></textarea>
+          <div class="actions" style="margin-top:8px;">
+            <button id="btnCytoAccept" class="btn btn--primary">Accept</button>
+            <button id="btnCytoReject" class="btn btn--danger">Reject</button>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="btnDownload" class="btn">Save Entry</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div id="footerMsg">Manual mode ready.</div>
+    </footer>
+  </div>
+
+  <script>
+    const dom = {
+      thumbPath: document.getElementById('thumbPath'),
+      boxPath: document.getElementById('boxPath'),
+      cytoPath: document.getElementById('cytoPath'),
+      imgThumb: document.getElementById('imgThumb'),
+      imgBox: document.getElementById('imgBox'),
+      imgCyto: document.getElementById('imgCyto'),
+      btnLoad: document.getElementById('btnLoad'),
+      editThumb: document.getElementById('editThumb'),
+      editWhy: document.getElementById('editWhy'),
+      editBox: document.getElementById('editBox'),
+      editCyto: document.getElementById('editCyto'),
+      btnDownload: document.getElementById('btnDownload'),
+      btnDownloadJSON: document.getElementById('btnDownloadJSON'),
+      btnDownloadCSV: document.getElementById('btnDownloadCSV'),
+      footerMsg: document.getElementById('footerMsg'),
+    };
+
+    function setFooter(msg){ dom.footerMsg.textContent = msg; }
+
+    dom.btnLoad.addEventListener('click', () => {
+      dom.imgThumb.src = dom.thumbPath.value || '';
+      dom.imgBox.src = dom.boxPath.value || '';
+      dom.imgCyto.src = dom.cytoPath.value || '';
+      setFooter('Loaded previews.');
+    });
+
+    function download(filename, content, mime){
+      const blob = new Blob([content], { type: mime });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = filename; document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function buildEntry(){
+      return {
+        thumb: dom.thumbPath.value || '',
+        box: dom.boxPath.value || '',
+        cyto: dom.cytoPath.value || '',
+        thumbDraft: dom.editThumb.value || '',
+        whyDraft: dom.editWhy.value || '',
+        boxDraft: dom.editBox.value || '',
+        cytoDraft: dom.editCyto.value || '',
+        decisions: {
+          thumb: 'accept',
+          why: 'accept',
+          box: 'accept',
+          cyto: 'accept',
+        },
+      };
+    }
+
+    dom.btnDownload.addEventListener('click', () => {
+      const entry = buildEntry();
+      download('manual_entry.json', JSON.stringify(entry, null, 2), 'application/json');
+    });
+
+    dom.btnDownloadJSON.addEventListener('click', () => {
+      const entry = buildEntry();
+      download('manual_entry.json', JSON.stringify(entry, null, 2), 'application/json');
+    });
+    dom.btnDownloadCSV.addEventListener('click', () => {
+      const e = buildEntry();
+      const headers = ['thumb','box','cyto','thumbDraft','whyDraft','boxDraft','cytoDraft'];
+      const row = [e.thumb,e.box,e.cyto,e.thumbDraft,e.whyDraft,e.boxDraft,e.cytoDraft]
+        .map(v => '"' + String(v??'').replace(/"/g,'""') + '"').join(',');
+      download('manual_entry.csv', headers.join(',') + '\n' + row, 'text/csv');
+    });
+  </script>
+</body>
+</html>
+
+
