@@ -1,7 +1,6 @@
 # Pathology-CoT: Learning Visual Chain-of-Thought Agent from Expert Whole Slide Image Diagnosis Behavior
 
 [![Paper](https://img.shields.io/badge/arXiv-2510.04587-red)](https://arxiv.org/abs/2510.04587)
-[![Dataset](https://img.shields.io/badge/🤗-Dataset-yellow)](https://huggingface.co/datasets/XXXX)
 
 > **TL;DR:** We introduce a scalable framework to convert expert pathologist viewing behavior into structured Chain-of-Thought training data. By recording and processing routine diagnostic sessions, we enable AI agents to learn **where to look** and **why it matters** in whole-slide images—turning tacit clinical expertise into accessible supervision.
 
@@ -468,7 +467,6 @@ If you find this work useful, please cite:
 ## 🔗 Links
 
 - 📄 **Paper**: [arXiv:2510.04587](https://arxiv.org/abs/2510.04587)
-- 🤗 **Dataset**: [HuggingFace](https://huggingface.co/datasets/XXXX) (Coming Soon)
 - ⚖️ **Model Weights**: [Google Drive](https://drive.google.com/file/d/1Nt43q0R9j42w6qZFXp0J0fA_NwUlgqmb/view?usp=share_link) (behavior_predictor.pt, 130 MB)
 - 🌐 **Demo**: Coming Soon!
 - 💬 **Issues**: [GitHub Issues](https://github.com/zhihuanglab/Pathology-CoT/issues)
